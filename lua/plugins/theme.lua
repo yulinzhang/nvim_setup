@@ -11,14 +11,33 @@
 return {
   -- add gruvbox
   -- { "ellisonleao/gruvbox.nvim" },
-  { "sainnhe/gruvbox-material"},
-
+  {
+    "folke/tokyonight.nvim",
+    lazy = true,
+    opts = {
+      style = "night",
+      transparent = false,
+    },
+  },
 
   -- Configure LazyVim to load gruvbox
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "gruvbox-material",
+      colorscheme = "tokyonight",
     },
   },
-}
+
+  -- Configure snacks for file explorer
+  -- { "nvim-tree/nvim-web-devicons", lazy = true },
+  -- {
+  --   "folke/snacks.nvim",
+  --   opts = {
+  --     image = { enabled = true },
+  --     picker = { enabled = true },
+  --     explorer = { enabled = true },
+  --     -- Add other snacks components as needed
+  --   },
+  -- },
+
+  }
