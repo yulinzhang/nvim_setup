@@ -15,6 +15,7 @@ return {
         filters = {
           dotfiles = true,
         },
+        update_focused_file = { enable = true },
       })
       -- vim.api.nvim_set_keymap("n", "<C-n>", ":NvimTreeToggle<CR>", { silent = true, noremap = true })
     end,
