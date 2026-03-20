@@ -3,3 +3,6 @@ alias vim="/opt/nvim-linux-x86_64/bin/nvim"
 
 # set up kiro-cli
 export PATH="$HOME/.local/bin:$PATH"
+
+# aws
+export AWS_PROFILE=nudeep-developer
